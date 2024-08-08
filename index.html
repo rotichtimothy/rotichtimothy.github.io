@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Welcome to Timothy Rotich's personal portfolio. Discover my work and services in web development, programming, and more." />
+    <meta name="keywords" content="Timothy Rotich, Developer, Programmer, Web Development, Portfolio" />
+    <meta property="og:title" content="Timothy Rotich - Developer | Programmer" />
+    <meta property="og:description" content="Discover Timothy Rotich's work and services in web development, programming, and more." />
+    <meta property="og:image" content="about_me.jpg" />
+    <meta property="og:url" content="https://rotichtimothy.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Timothy Rotich - Developer | Programmer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <header class="hero animate">
+        <nav class="animate">
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img src="logo.webp" alt="Logo"></a>
+            </div>
+            <div class="nav-middle">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="https://github.com/rotichtimothy" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+        <div class="content-wrapper">
+            <div class="content animate">
+                <span class="title">Developer | Programmer</span>
+                <h1>Hello, I’m <span>Timothy Rotich</span></h1>
+                <p>
+                    I’m a passionate developer with a knack for creating clean, efficient code. I love making websites more interactive with engaging web animations.
+                </p>
+                <a href="https://drive.google.com/file/d/1xoWm1sEjrupG2lEFsf-lE012aONUFTL9/view?usp=drive_link" class="btn"><i class="fas fa-download"></i> Download CV</a>
+                <a href="portfolio.html" class="btn"><i class="fas fa-briefcase"></i> View My Work</a>
+            </div>
+            <div class="photo profile-photo animate">
+                <img src="about_me.jpg" alt="Timothy Rotich" />
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Me</h3>
+                <p>
+                    I’m a passionate developer with a knack for creating clean, efficient code.
+                    I love making websites more interactive with engaging web animations.
+                </p>
+            </div>
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> rotichtimothy202@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +254 797 560 036</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Timothy Rotich. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            loader.style.display = "none";
+            document.querySelectorAll('.animate').forEach(element => {
+                element.classList.add('fade-in');
+            });
+        });
+
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

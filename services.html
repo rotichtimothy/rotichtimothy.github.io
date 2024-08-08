@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Explore the services offered by Timothy Rotich, including web development, UI design, and more." />
+    <meta name="keywords" content="Timothy Rotich, Services, Web Development, UI Design" />
+    <meta property="og:title" content="Services - Timothy Rotich" />
+    <meta property="og:description" content="Explore the services offered by Timothy Rotich, including web development, UI design, and more." />
+    <meta property="og:image" content="path/to/your/image.jpg" />
+    <meta property="og:url" content="https://rotichtimothy.github.io/services.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Services - Timothy Rotich</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <header class="hero animate">
+        <nav class="animate">
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img src="logo.webp" alt="Logo"></a>
+            </div>
+            <div class="nav-middle">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="https://github.com/rotichtimothy" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+        <div class="content-wrapper">
+            <div class="content animate">
+                <h1>My Services</h1>
+                <div class="services-text">
+                    <p>
+                        I offer a wide range of services to help you achieve your business goals.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-code"></i> <strong>Web Development</strong>
+                            <p>I build responsive, user-friendly websites that work seamlessly across all devices.</p>
+                        </li>
+                        <li><i class="fas fa-palette"></i> <strong>UI Design</strong>
+                            <p>Creating aesthetically pleasing interfaces that offer an excellent user experience.</p>
+                        </li>
+                        <li><i class="fas fa-laptop-code"></i> <strong>Program Development</strong>
+                            <p>Developing custom software solutions tailored to your unique needs and requirements.</p>
+                        </li>
+                        <li><i class="fas fa-edit"></i> <strong>Writing</strong>
+                            <p>Crafting engaging content that captures the essence of your brand and communicates your message effectively.</p>
+                        </li>
+                        <li><i class="fas fa-keyboard"></i> <strong>Data Entry</strong>
+                            <p>Efficient and accurate data entry services to keep your business operations running smoothly.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="photo animate">
+                <img src="services.jpg" alt="Services" />
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Me</h3>
+                <p>
+                    I’m a passionate developer with a knack for creating clean, efficient code.
+                    I love making websites more interactive with engaging web animations.
+                </p>
+            </div>
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> rotichtimothy202@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +254 797 560 036</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Timothy Rotich. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            loader.style.display = "none";
+            document.querySelectorAll('.animate').forEach(element => {
+                element.classList.add('fade-in');
+            });
+        });
+
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

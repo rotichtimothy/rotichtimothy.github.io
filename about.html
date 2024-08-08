@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Learn more about Timothy Rotich, a passionate developer specializing in web development and design." />
+    <meta name="keywords" content="Timothy Rotich, About, Developer, Web Development" />
+    <meta property="og:title" content="About Me - Timothy Rotich" />
+    <meta property="og:description" content="Learn more about Timothy Rotich, a passionate developer specializing in web development and design." />
+    <meta property="og:image" content="about_me.jpg" />
+    <meta property="og:url" content="https://rotichtimothy.github.io/about.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>About Me - Timothy Rotich</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <header class="hero animate">
+        <nav class="animate">
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img src="logo.webp" alt="Logo"></a>
+            </div>
+            <div class="nav-middle">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="https://github.com/rotichtimothy" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+        <div class="content-wrapper">
+            <div class="content animate">
+                <h1>About Me</h1>
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Timothy Rotich, a passionate developer with a knack for creating clean and efficient code. I have a strong background in web development and a keen eye for design.
+                    </p>
+                    <p>
+                        I love working on challenging projects that push the boundaries of what's possible on the web. When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.
+                    </p>
+                    <p>
+                        I've worked on diverse projects across various industries, and I'm always eager to learn and grow in my field.
+                    </p>
+                    <h2>Technologies and Tools</h2>
+                    <div class="tech-tools">
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photo profile-photo animate">
+                <img src="about_me.jpg" alt="About" />
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Me</h3>
+                <p>
+                    I’m a passionate developer with a knack for creating clean, efficient code.
+                    I love making websites more interactive with engaging web animations.
+                </p>
+            </div>
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> rotichtimothy202@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +254 797 560 036</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Timothy Rotich. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            loader.style.display = "none";
+            document.querySelectorAll('.animate').forEach(element => {
+                element.classList.add('fade-in');
+            });
+        });
+
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
